@@ -38,16 +38,22 @@
       <div class="navbar">
         <ul class="navbar-list">
           <li><a class="active" href="./index.html">Home</a></li>
-          <li><a href="./shop.html" id="shop">Shop</a></li>
+          <li><a href="#" id="shop">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <!-- icons -->
       <div class="icons">
-        <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>        
         <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <div class="cart" id="cartIcon">
+          <a href="./checkout.html">
+            <i class="fa-solid fa-cart-arrow-down">
+              <span id="cart-count"></span>
+            </i>
+          </a>
+        </div>       
       </div>
       <div class="burger">
         <div class="line1"></div>
@@ -55,8 +61,8 @@
         <div class="line3"></div>
       </div>
     </section>
-
     <!-- header ends here -->
+
     <!-- BANNER -->
     <section class="main">
     <div class="slickBanner">
@@ -148,8 +154,7 @@
           </div>
         </a> 
       </div>      
-    </div>    
-    
+    </div>       
   
 
   </section>
@@ -187,6 +192,7 @@
         </p>
       </div>
     </section>
+   <!-- footer ends here  -->
     <script src="./jQuery/jquery-3.6.0.min.js"></script>
     <script src="./slick files/slick.min.js"></script>
     <script src="./script.js"></script>

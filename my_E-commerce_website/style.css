@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Whisper&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Whisper&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Source+Sans+Pro:wght@300&family=Whisper&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .header {
@@ -18,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 16px 8%;
+  padding: 14px 5%;
 }
 .search-box {
   border: 1px solid rgb(245, 242, 242);
@@ -60,9 +65,31 @@
   left: 15px;
 }
 
-.icons a {
-  padding: 2px 12px;
+/* icons */
+.icons {
+  display: flex;
   color: darkslategrey;
+}
+.icons i {
+  padding-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 35px;
+}
+.icons .cart {
+  position: relative;
+}
+.icons .cart a {
+  color: darkslategrey;
+}
+.icons .cart a span {
+  color: #fff;
+  background-color: #ef7c8e;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 0;
 }
 .icons a:hover {
   color: #ef7c8e;
@@ -98,7 +125,7 @@
     overflow-x: hidden;
   }
   .header {
-    padding: 10px 2%;
+    padding: 10px 1%;
   }
   .navbar-list {
     position: fixed;
@@ -204,10 +231,9 @@
 }
 #categories h2 {
   margin-top: 40px;
-  padding: 45px 30px;
+  padding: 40px 30px;
   letter-spacing: 2px;
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
   color: #aa1945;
 }
 
@@ -342,21 +368,20 @@
     rgba(33, 33, 35, 0.28) 65%
   );
   background-color: #aa1945;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-around;
 }
 .footer-container h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 80px;
+  letter-spacing: 2px;
+  line-height: 60px;
   color: #f9fafa;
-  font-weight: 800;
+  font-weight: 1000;
   cursor: pointer;
 }
 .footer-container ul li {
@@ -364,20 +389,21 @@
 }
 .footer-container ul li a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   list-style: none;
-  letter-spacing: 1px;
-  line-height: 30px;
-  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 300;
   color: aliceblue;
   cursor: pointer;
 }
+.footer-container ul li a:hover {
+  color: #ef7c8e;
+}
 .footer-container p {
-  font-family: "Montserrat", sans-serif;
   list-style: none;
   letter-spacing: 1px;
-  line-height: 30px;
-  font-weight: 400;
+  line-height: 20px;
+  font-weight: 300;
   color: aliceblue;
   cursor: pointer;
 }
@@ -391,20 +417,17 @@
 }
 .featuredHeader h1 {
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
-  font-weight: 900;
   color: #aa1945;
 }
 .featuredHeader h4 {
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
-  font-size: 10px;
+  font-size: 8px;
   text-align: center;
-  line-height: 42px;
+  line-height: 26px;
   font-weight: 900;
 }
 .section-heading {
@@ -412,7 +435,6 @@
   padding: 45px 30px;
   letter-spacing: 2px;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #5f0923;
 }
@@ -461,4 +483,281 @@
   color: darkcyan;
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+/* product page css */
+
+#product {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-column {
+  width: 40%;
+}
+.right-column {
+  width: 60%;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+.left-column img {
+  width: 100%;
+  margin-top: 60px;
+}
+.product-description {
+  margin-bottom: 40px;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 44px;
+  letter-spacing: -2px;
+}
+.product-description h4 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.product-description h3 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.product-description h3 span {
+  color: #009688;
+  font-weight: bold;
+}
+.product-description p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939e;
+}
+.product-preview .previewImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 20px;
+}
+.product-preview .previewImg img {
+  margin: 5px;
+  width: 15%;
+  height: 30%;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.btn button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #ef7c8e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.btn button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 768px) {
+  #product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left-column {
+    width: 100%;
+  }
+  .right-column {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 30px;
+  }
+  .left-column img {
+    margin-top: 30px;
+  }
+  .product-description h1 {
+    font-size: 34px;
+  }
+  .product-description h4 {
+    font-size: 14px;
+  }
+  .product-description h3 {
+    font-size: 17px;
+  }
+  .product-description p {
+    font-size: 14px;
+  }
+}
+
+/* CheckOut Page Style */
+
+#cart {
+  margin: 4% 6%;
+  padding-top: 30px;
+}
+#cart h1 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-side {
+  width: 52%;
+  margin-top: 60px;
+}
+.right-side {
+  width: 45%;
+  margin-top: 60px;
+}
+.left-side p {
+  color: rgb(27, 25, 25);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.item {
+  display: flex;
+  width: 600px;
+  margin-top: 25px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.item img {
+  width: 80px;
+  height: 100px;
+  border-radius: 4px;
+}
+.item .detail {
+  padding-left: 15px;
+}
+.item .detail p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+.total-amount {
+  width: 450px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.total-amount h2 {
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.total-amount p {
+  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.total-amount p span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.total-amount button {
+  font-size: 16px;
+  margin-top: 50px;
+  font-weight: 300;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #ef7c8e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.total-amount button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 450px;
+  }
+  .total-amount {
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .left-side {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .right-side {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .item {
+    width: 600px;
+  }
+  .total-amount {
+    width: 600px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .item {
+    width: 350px;
+  }
+  .item .detail h1 {
+    font-size: 20px;
+  }
+  .item .detail p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .item {
+    width: 325px;
+  }
+  .item .detail h1 {
+    font-size: 18px;
+  }
+  .total-amount {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .item {
+    width: 275px;
+  }
+  .item .detail h1 {
+    font-size: 16px;
+  }
+  .total-amount {
+    width: 275px;
+  }
+}
+
+.order-confirm {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.order-confirm img {
+  height: 300px;
+}
+.order-confirm h2 {
+  margin-top: 60px;
+}
+.order-confirm p {
+  margin-top: 10px;
 }

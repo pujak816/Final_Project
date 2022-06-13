@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SHOPLANE - A Place For Shopping</title>
+    <script
+    src="https://kit.fontawesome.com/45c7b97df8.js"
+    crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="./style.css" />
+  
+  </head>
+  <body>
+      <!-- header starts here -->
+      <section class="header">
+        <!-- logo- section -->
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Myntra_logo.png"
+              width="60px"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- search-box -->
+        <div class="search-box">       
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" />
+        </div>
+        <!-- navbar -->
+        <div class="navbar">
+          <ul class="navbar-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="#" id="shop">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- icons -->
+        <div class="icons">
+          <a href="#"><i class="fa-regular fa-user"></i></a>        
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <div class="cart" id="cartIcon">
+            <a href="./checkout.html">
+              <i class="fa-solid fa-cart-arrow-down">
+                <span id="cart-count"></span>
+              </i>
+            </a>
+          </div>       
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </section>
+      <!-- header ends here -->
+
+    <section id="product">
+      <div class="left-column">
+        <img id="productImg" src="./img/placeholder.jpg" alt="" />
+      </div>
+      <div class="right-column">
+        <div class="product-description">
+          <h1 id="name">Product Name</h1>
+          <h4 id="brand">Product Barnd</h4>
+          <h3>Price: Rs <span id="price"></h3>
+          <div class="description">
+            <h3>Description</h3>
+            <p id="description">
+              Product Description
+            </p>
+          </div>
+          <div class="product-preview">
+            <h3>Product Preview</h3>
+            <div class="previewImg">
+                <img id="img0" class="active" src="./img/placeholder.jpg" alt="" />
+                <img id="img1" src="./img/placeholder.jpg" alt="" />
+                <img id="img2" src="" alt="" />
+                <img id="img3" src="" alt="" />
+                <img id="img4" src="" alt="" />
+                <img id="img5" src="" alt="" />
+            </div>
+          </div>
+        </div>
+          <div class="btn">
+            <button id="add-to-cart">Add to Cart</button>
+          </div>
+      </div>
+    </section>
+
+   <!-- footer section -->
+   <section class="footer">
+    <div class="footer-container">
+      <h3 footer-title>Online Shopping</h3>
+      <ul>
+        <li><a href="./index.html">Men</a></li>
+        <li><a href="./index.html">Women</a></li>
+        <li><a href="./index.html">Kids</a></li>
+        <li><a href="./index.html">Home & Living</a></li>
+        <li><a href="./index.html">Beauty</a></li>
+        <li><a href="./index.html">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-container">
+      <h3>Helpful Links</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-container">
+      <h3>Address</h3>
+      <p>
+        Buildings Alyssa, Begonia</br> and Clover situated</br> in Embassy Tech Village,</br>
+        Outer Ring Road,</br> Devarabeesanahalli Village, Varthur Hobli,</br> Bengaluru
+        – 560103, India
+      </p>
+    </div>
+  </section>
+ <!-- footer ends here  -->
+    
+    <script src="./jQuery/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
